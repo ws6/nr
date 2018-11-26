@@ -11,8 +11,6 @@ swagger.zip
 .idea/*
 .csv
 *old*
-*_test.go
-*test.go
 *.csv
 *.zip
 *.sdf
