@@ -1,8 +1,9 @@
 package nr
 
-const TINY = 1.0e-20
-
-func Ludcmp(a [][]float64, n int, indx []int) (d float64) {
+func Ludcmp(a [][]float64, n int, indx []int) (
+	d float64,
+	err error,
+) {
 	d = 1.0
 	var i, k int
 	var big, dum, sum, temp float64
@@ -17,7 +18,8 @@ func Ludcmp(a [][]float64, n int, indx []int) (d float64) {
 		}
 
 		if big == 0.0 {
-			nrerror("Singular matrix in routine ludcmp")
+			err = nerror("Singular matrix in routine ludcmp")
+			return
 		}
 		vv[i] = 1.0 / big
 	}

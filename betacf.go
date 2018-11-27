@@ -1,11 +1,5 @@
 package nr
 
-const (
-	MAXIT = 100     //Maximum allowed number of iterations
-	EPS   = 3.0e-7  //Relative accuracy
-	FPMIN = 1.0e-30 //Number near the smallest representable floating-point number
-)
-
 func Betacf(a, b, x float64) (h float64, err error) {
 	qab := a + b
 	qap := a + 1.

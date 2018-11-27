@@ -25,3 +25,11 @@ func sqrt(f float64) float64 {
 func SQR(f float64) float64 {
 	return f * f
 }
+
+func FMAX(f1, f2 float64) float64 {
+	if f2 > f1 {
+		return f2
+	}
+
+	return f1
+}
