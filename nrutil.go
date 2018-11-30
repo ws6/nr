@@ -24,6 +24,9 @@ func matrix_dim(d [][]float64) (row int, col int) {
 func vector(sz int) []float64 {
 	return make([]float64, sz)
 }
+func ivector(sz int) []int {
+	return make([]int, sz)
+}
 
 func imatrix(nrow, ncol int) [][]int {
 	ret := make([][]int, nrow)

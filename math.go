@@ -33,3 +33,19 @@ func FMAX(f1, f2 float64) float64 {
 
 	return f1
 }
+
+func pow(x float64, y float64) float64 {
+	return math.Pow(x, y)
+}
+
+func ipow(x, y int) float64 {
+	return pow(float64(x), float64(y))
+}
+
+func IMIN(a, b int) int {
+	if a < b {
+		return a
+	}
+
+	return b
+}

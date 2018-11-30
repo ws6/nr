@@ -6,5 +6,5 @@ const (
 	EPS1  = 0.001
 	EPS2  = 1.0e-8
 	FPMIN = 1.0e-30 //Number near the smallest representable floating-point number
-	TINY  = 1.0e-30
+	TINY  = 1.0e-20
 )
